@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "X",
+    "project_id": "X",
+    "storage_bucket": "X"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "X",
+        "android_client_info": {
+          "package_name": "com.example.containerprioritization"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

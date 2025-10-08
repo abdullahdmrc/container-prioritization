@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="392dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Hoş geldiniz!\n\nBu uygulama, şehir genelindeki çöp konteynerlerinin doluluk, sıcaklık ve gaz sensör verilerini anlık olarak takip etmenizi sağlar.\n\n📍 Harita üzerinde gördüğünüz markerlar, sensör takılı konteynerlerin yerlerini gösterir. Marker üzerine tıkladığınızda, seçilen konteynerin sıcaklık, doluluk oranı ve diğer bilgilerinin detayını görebilir ve aracınızı yönlendirebilirsiniz.\n\n🚛 Başla butonuna tıklayarak, çöp toplama işlemlerini önceliklendirip, en uygun rotayı belirleyebilirsiniz.\n\n🔒 Güvenli ve verimli bir atık toplama sistemi için buradayız!"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="startToMap"
+        android:text="Başla"
+        app:cornerRadius="15dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/signoutButton"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="backToLog"
+        android:text="Çıkış yap"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
